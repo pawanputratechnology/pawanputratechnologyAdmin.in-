@@ -1,0 +1,30 @@
+@import "rsuite/dist/rsuite.css";
+
+.rs-theme-dark {
+  --rs-gray-50: palette(@my-red, 50);
+  --rs-gray-100: palette(@my-red, 100);
+  --rs-gray-500: @my-blue;
+  --rs-gray-900: palette(@my-red, 900);
+}
+
+.rs-picker-popup {
+  position: absolute;
+  text-align: left;
+  z-index: 7;
+  border-radius: 6px;
+  background-color: #fff;
+  background-color: var(--rs-bg-overlay);
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.12), 0 0 10px rgba(0, 0, 0, 0.06);
+  -webkit-box-shadow: var(--rs-shadow-overlay);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.12), 0 0 10px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--rs-shadow-overlay);
+  overflow: hidden;
+  -webkit-transition: none;
+  transition: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 6px 0;
+  z-index: 2222;
+}
